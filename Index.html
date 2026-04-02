@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>To Figure AI | Created by @Zerozx</title>
+  <!-- Google Fonts: Elegant serif + modern sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="noise"></div>
+<div class="container">
+  <div class="brand">
+    <div class="logo-wrapper">
+      <i class="fas fa-archway"></i>
+      <h2>To Figure AI</h2>
+    </div>
+    <div class="tagline"><i class="fas fa-feather"></i> atelier of digital sculpture</div>
+  </div>
+
+  <div class="upload-zone">
+    <label for="imageInput" class="file-label">
+      <i class="fas fa-cloud-upload-alt"></i>
+      <span>Drop reference or click to upload</span>
+      <span class="small-hint">JPG · PNG · WEBP · max 12 MB</span>
+    </label>
+    <input type="file" id="imageInput" accept="image/*" />
+    <div class="file-meta">
+      <div id="fileNameDisplay" class="file-name" style="display: none;"></div>
+    </div>
+  </div>
+
+  <div class="button-group">
+    <button class="btn-primary" id="generateBtn">
+      <i class="fas fa-gem"></i> <span>Generate Figure</span>
+    </button>
+    <button class="btn-download" id="downloadBtn" style="display: none;">
+      <i class="fas fa-download"></i> <span>4K Archive</span>
+    </button>
+  </div>
+
+  <div class="status-capsule">
+    <div class="status-icon"><i class="fas fa-crown" id="statusIcon"></i></div>
+    <div id="status">⚜️ atelier ready — upload your muse</div>
+  </div>
+
+  <div class="result-frame" id="resultFrame">
+    <div class="placeholder-glam" id="imgPlaceholder">
+      <i class="fas fa-sculpture"></i>
+      <p>neural sculpture preview</p>
+      <div class="figcaption"><i class="fas fa-sparkle"></i> AI · ZBrush aesthetic · volumetric light</div>
+    </div>
+    <img id="result" style="display: none;" alt="AI generated figure artwork" />
+    <div class="download-hint-badge" id="hintBadge" style="display: none;">
+      <i class="fas fa-hand-pointer"></i> tap image to save
+    </div>
+  </div>
+
+  <div class="credit-footer">
+    <span><i class="fas fa-robot"></i> generative intelligence</span>
+    <span><i class="fas fa-palette"></i> 8k cinematic render</span>
+    <span><i class="fas fa-cloud-moon"></i> private cloud</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
